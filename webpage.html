@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <style>
     head, body{
+        font-family: 'Raleway', sans-serif;
         background-color: #1f1d1d;
         color: wheat;
+        background-image: url("src/noaa-cthDc0hUM0o-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
     }
     .heading{
         display: flex;
@@ -29,15 +33,23 @@
         font-size: xx-large;
     }
     .searchbutton{
+        background-image: url("src/icons8-search-more-60.png");
         height: 75px;
         width: 70px;
         margin-left: 5px;
-
+        background-size: contain;
+    }
+    .searchbutton:hover{
+        background-image: url("src/icons8-search-more-50.png");
+        height: 75px;
+        width: 70px;
+        transition-delay: 0.1s;
     }
 </style>
 <html>
     <head>
         <title>Weather Today</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div class="heading">
@@ -48,7 +60,7 @@
         </div>
         <div class="search">
             <input type="text" class="searchbar" id="search" placeholder="Search for a place...">
-            <button class="searchbutton"><img src="icons8-search-more-60.png"></button>
+            <button class="searchbutton"></button>
         </div>
     </body>
     <footer>
