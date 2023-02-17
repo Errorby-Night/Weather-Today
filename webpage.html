@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<style>
+    head, body{
+        background-color: #1f1d1d;
+        color: wheat;
+    }
+    .heading{
+        display: flex;
+        flex-direction: row;
+    }
+    .headimage{
+        width: 500px;
+    }
+    .about{
+        margin-left: 900px;
+        margin-top: 50px;
+        font-size: x-large;
+    }
+    .search{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       height: 50vh;
+    }
+    .searchbar{
+        height: 70px;
+        width: 600px;
+        font-size: xx-large;
+    }
+    .searchbutton{
+        height: 75px;
+        width: 70px;
+        margin-left: 5px;
+
+    }
+</style>
+<html>
+    <head>
+        <title>Weather Today</title>
+    </head>
+    <body>
+        <div class="heading">
+            <h1>
+                <img class="headimage" src="src/logo-no-background.png">
+            </h1>
+            <p class="about">About</p>
+        </div>
+        <div class="search">
+            <input type="text" class="searchbar" id="search" placeholder="Search for a place...">
+            <button class="searchbutton"><img src="icons8-search-more-60.png"></button>
+        </div>
+    </body>
+    <footer>
+        <p>This page was built using Java.</p>
+    </footer>
+</html>
