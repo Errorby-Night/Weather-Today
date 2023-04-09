@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<style>
+    head, body{
+        font-family: 'Raleway', sans-serif;
+        background-color: #1f1d1d;
+        color: wheat;
+        background-image: url("src/noaa-cthDc0hUM0o-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: none;
+    }
+    .headimage{
+        width: 500px;
+    }
+    .links{
+        display: flex;
+        gap: 10px;
+    }
+    .about, .contact{
+        margin-top: 50px;
+        font-size: x-large;
+        margin-left: 5px;
+    }
+    .search{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       height: 50vh;
+       
+    }
+    .searchbar{
+        height: 70px;
+        width: 600px;
+        font-size: xx-large;
+        border-radius: 2%;
+    }
+    .searchbutton{
+        background-image: url("src/icons8-search-more-60.png");
+        
+        height: 75px;
+        width: 70px;
+        margin-left: 5px;
+        background-size: contain;
+        border-radius: 10%;
+    }
+    .searchbutton:hover{
+        background-image: url("src/icons8-search-more-50.png");
+        height: 75px;
+        width: 70px;
+        background-size: contain;
+        transition-delay: 0.1s;
+    }
+</style>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Today</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="heading">
+            <h1>
+                <img class="headimage" src="src/logo-no-background.png">
+            </h1>
+            <div class="links">
+                <p class="about">About</p>
+                <p class="contact">Contact</p>
+            </div>
+        </div>
+        <form action="weather" method="get">
+            <div class="search">
+                <input type="text" class="searchbar" id="search" placeholder="Search for a place..." name="city">
+                <button  type="submit" class="searchbutton"></button>
+            </div>
+        </form>
+        <p id="output"></p>
+    </body>
+    <footer>
+        <p>This page was built using Java.</p>
+    </footer>
+</html>

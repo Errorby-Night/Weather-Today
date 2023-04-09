@@ -1,0 +1,78 @@
+ body, head{
+            font-family: 'Raleway', sans-serif;
+            background-color: #222;
+            color: black;
+            background-image: url(search-back.jpg);
+            background-size: cover;
+        }
+        .main{
+            background-color: none;
+            display: inline-flex;
+            flex-direction: column;
+            gap:1px;
+        }
+        .main * {
+            margin: 0;
+            padding: 0;
+            margin-top: 2px;
+        }
+
+        .location{
+            font-size: x-large;
+        }
+        .temp{
+            font-size: xx-large;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .links{
+            display: flex;
+            gap: 15px;
+            font-size: large;
+        }
+        input{
+            width: 200px;
+            height: 35px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .searchbutt{
+           border-radius: 10%;
+        }
+        .days {
+            display: inline-flex;
+            margin: 5px;
+            padding: 10px;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.5);
+            justify-content: left;
+            border: 1px solid black;
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+
+
+        .alldays {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        #day1 {
+            margin-top: 0;
+        }
+
+        .days h2 {
+            margin: 0;
+            padding: 0;
+            font-size: large;
+            line-height: 1.2;
+        }
+        .days p {
+            margin: 5px 0; /* adjust as needed */
+        }
