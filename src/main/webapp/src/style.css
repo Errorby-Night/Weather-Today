@@ -55,7 +55,9 @@
           width: 200px; /* Add a fixed width */
           height: 200px; /* Add a fixed height */
         }
-
+        a{
+            text-decoration:none;
+        }
         .alldays {
           display: flex;
           flex-direction: row;

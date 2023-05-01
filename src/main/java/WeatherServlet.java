@@ -48,7 +48,7 @@ public class WeatherServlet extends HttpServlet {
             out.println("<form action=\"weather\" method='get'>");
             out.println("<input type=\"text\" class=\"searchbar\" id=\"search\" placeholder=\"Search\" name=\"city\"><button type='submit'><img src='src/search.png' width='20px' height='15px' class='searchbutt'></button>");
             out.println("</form>");
-            out.println("<p>About</p>");
+            out.println("<p><a href=\"https://github.com/Errorby-Night/Weather-Today\">About</a></p>");
             out.println("<p>Contact</p>");
             out.println("</div>");
             out.println("</div>");
