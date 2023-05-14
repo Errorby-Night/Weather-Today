@@ -11,7 +11,7 @@ import org.json.JSONObject;
 public class WeatherAPI {
 
     private final String apiKey;
-    private static final String API_ENDPOINT = "http://api.openweathermap.org/data/2.5/forecast?q=%s&appid=%s&units=metric&cnt=17";
+    private static final String API_ENDPOINT = "http://api.openweathermap.org/data/2.5/forecast?q=%s&appid=%s&units=metric&cnt=25";
     private final String city;
 
     public WeatherAPI(String apiKey, String city) {

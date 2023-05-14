@@ -69,7 +69,7 @@ public class WeatherServlet extends HttpServlet {
             out.println("</div>");
             out.println("<br><br><br><br>");
             out.println("<div class='alldays'>");
-                for (int i = 1; i < 17; i++) {
+                for (int i = 1; i <= 24; i++) {
                     JSONObject dayData = weatherList.getJSONObject(i);
                     String date = dayData.getString("dt_txt");
                     String iconCode = dayData.getJSONArray("weather").getJSONObject(0).getString("icon");
@@ -90,9 +90,9 @@ public class WeatherServlet extends HttpServlet {
                     out.println("<p>Temp: <span id='temp" + (i + 1) + "'>" + temperature + " &deg;C <img src='http://openweathermap.org/img/w/" + iconCode + ".png'></span></p>");
                     out.println("<p>Wind: <span id='win" + (i + 1) + "'>" + windSpeed + " mph</span></p>");
                     out.println("<p>Humidity: <span id='hum" + (i + 1) + "'>" + humidity + "%</span></p>");
-                    out.println("<p>Description: <span id='des" + (i + 1) + "'>" + description + "</span></p>");
+                    out.println("<p>Condition: <span id='des" + (i + 1) + "'>" + description + "</span></p>");
                     out.println("</div>");
-                    if(i%4==0){out.println("</div><div class='alldays'>");}
+                    if(i%6==0){out.println("</div><div class='alldays'>");}
                 }
 
             out.println("</div>");
